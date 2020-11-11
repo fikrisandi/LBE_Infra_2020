@@ -128,3 +128,11 @@ Sub Judul :
   <p> Mendeploy CI tidak harus dengan menggunakan cara yang diatas bisa juga dengan cara yang lain, hanya saja karena saya tidak bisa menggunakan cara manual saya menggunakan cara instan dengan menggunakan komposer, disisi lain mendeploy CI juga bisa menggunakan web server <b>Apache</b> yang fungsinya sama dengan <b>Nginx</b> untuk perbedaannya saya kurang tahu. </p>
   </justify>
   
+## Refrensi
+<justify>
+  
+  -https://codeigniter.com/user_guide/installation/installing_composer.html
+  -https://github.com/hipzi/LEMP/
+  -https://github.com/kuuhaku86/Modul-Pelatihan-Linux-2020/
+  
+</justify>  
