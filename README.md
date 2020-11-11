@@ -50,18 +50,18 @@ Sub Judul :
 <p> Cara mendapatkan ip yaitu dengan cara command "ifconfig" pada terminal. </p> <br>
 
 
-<p> 2. Karena telah memiliki web server, maka perlu untuk menginstal MySQL (sistem manajemen database) untuk menyimpan dan mengelola data. Instal MySQL dengan mengetik :
+<p> 2. Karena telah memiliki web server, maka perlu untuk menginstal <b> MySQL </b> (sistem manajemen database) untuk menyimpan dan mengelola data. Instal MySQL dengan mengetik :
 </p>
 
     sudo apt install mysql-server
 
-<p> Untuk mengamankan instalasi, MySQL dilengkapi dengan <i>script</i> yang akan menanyakan apakah kita ingin mengubah beberapa default yang tidak aman. Mulai <i>script</i> dengan mengetik:</p>
+<p> Untuk mengamankan instalasi, <b> MySQL </b> dilengkapi dengan <i>script</i> yang akan menanyakan apakah kita ingin mengubah beberapa default yang tidak aman. Mulai <i>script</i> dengan mengetik:</p>
 
     sudo mysql_secure_installation
 
 <br>
 
-<p> 3. Setelah instalasi Nginx dan MySQL berhasil, langkah berikutnya adalah menginstal PHP agar dapat menghasilkan konten dinamis.</p>
+<p> 3. Setelah instalasi <b> Nginx </b> dan <b> MySQL </b> berhasil, langkah berikutnya adalah menginstal <b> PHP </b> agar dapat menghasilkan konten dinamis.</p>
 
 <p>Masukkan perintah berikut pada terminal untuk memulai instalasi :</p>
 
@@ -69,7 +69,7 @@ Sub Judul :
 
 <br>
 
-<p> 4. Kemudian Instal Composer untuk mempermudah mendeploy CI (list yang dipakek ada di composer.json). Instalnya dengan cara command di terminal seperti di bawah: </p>
+<p> 4. Kemudian Instal <b> Composer </b> untuk mempermudah mendeploy CI (list yang dipakek ada di composer.json). Instalnya dengan cara command di terminal seperti di bawah: </p>
   
     sudo apt install composer
     
