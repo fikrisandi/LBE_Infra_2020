@@ -75,7 +75,7 @@ Sub Judul :
     
 <p> 5. Kemudian ke config nginx yang ada di <code> sudo nano /etc/nginx/sites-available/ </code> dan membuat file konfigrasi seperti dibawah ini: </p> 
 
-server {
+       server {
             listen 80;
             root /var/www/CodeIgniter;
             index index.php index.html index.htm index.nginx-debian.html;
