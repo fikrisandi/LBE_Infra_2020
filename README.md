@@ -131,8 +131,8 @@ Sub Judul :
 ## Refrensi
 <justify>
   
-  -https://codeigniter.com/user_guide/installation/installing_composer.html
-  -https://github.com/hipzi/LEMP/
+  -https://codeigniter.com/user_guide/installation/installing_composer.html <br>
+  -https://github.com/hipzi/LEMP/ <br>
   -https://github.com/kuuhaku86/Modul-Pelatihan-Linux-2020/
   
 </justify>  
