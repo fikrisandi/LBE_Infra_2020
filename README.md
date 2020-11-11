@@ -17,11 +17,12 @@ Sub Judul :
 ## Requirements
 <justify>
 <p> Persyaratan yang dibutuhkan yaitu: <br>
-1. Nginx <br>
-2. Myqsl <br>
-3. Php <br>
-4. Composer <br>
-5. Download CI di web CI resmi (saya pakek CI 3) </p>
+1. Linux (karena menggunakan linux) <br>
+2. Nginx <br>
+3. Myqsl <br>
+4. Php <br>
+5. Composer <br>
+6. Download CI di web CI resmi (saya pakek CI 3) </p>
 </justify>
 
 ## Langkah-langkah
@@ -105,4 +106,9 @@ Sub Judul :
 
 <p> 7. Setelah dipindahkan coba cek di Web browser dengan mengetik localhost saja atau dengan alamat ip masing-masing, Jika berhasil akan mendeploy CI.
 </justify>  
+  
+## Kesimpulan
+<justify>
+  <p> Mendeploy CI tidak harus dengan menggunakan cara yang diatas bisa juga dengan cara yang lain, hanya saja karena saya tidak bisa menggunakan cara manual saya menggunakan cara instan dengan menggunakan komposer, disisi lain mendeploy CI juga bisa menggunakan web server <b>Apache</b> yang fungsinya sama dengan <b>Nginx</b> untuk perbedaannya saya kurang tahu. </p>
+  </justify>
   
