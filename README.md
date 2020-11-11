@@ -109,9 +109,10 @@ Sub Judul :
 
     sudo nginx -t
 
-<p>Kemudian reload Nginx untuk membuat perubahan yang diperlukan:</p>
+<p>Kemudian reload dan restart Nginx untuk membuat perubahan yang diperlukan:</p>
 
     sudo service nginx reload
+    sudo service nginx restart
 
 <p> 6. Memindahkan folder CI ke subfolder var/www agar bisa dijalankan, caranya menggunakan command dibawah ini:
 
