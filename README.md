@@ -97,6 +97,21 @@ Sub Judul :
     }
 
 <p> Di dalam file konfigurasi terdapat " root /var/www/CodeIgniter; ", dari sini kita harus memindahkan file CI kita yang sudah di download kedalam folder var/www/.
+  Setelah menambahkan file konfigurasi, simpan dan tutup file. Aktifkan blok server baru dengan membuat tautan simbolis dari file konfigurasi blok server baru dalam      /etc/nginx/sites-available/ ke /etc/nginx/sites-enabled/: </p>
+
+      sudo ln -s /etc/nginx/sites-available/ /etc/nginx/sites-enabled/
+      
+<p>Kemudian, unlink tautan file konfigurasi default pada /etc/nginx/sites-enabled/: </p>
+
+      sudo unlink /etc/nginx/sites-enabled/default
+      
+<p>Uji file konfigurasi baru yang telah dibuat agar dapat mengetahui jika ada kesalahan sintaks dengan mengetik: </p>
+
+    sudo nginx -t
+
+<p>Kemudian reload Nginx untuk membuat perubahan yang diperlukan:</p>
+
+    sudo service nginx reload
 
 <p> 6. Memindahkan folder CI ke subfolder var/www agar bisa dijalankan, caranya menggunakan command dibawah ini:
 
