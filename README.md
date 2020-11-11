@@ -20,7 +20,8 @@ Sub Judul :
 1. Nginx <br>
 2. Myqsl <br>
 3. Php <br>
-4. Composer </p>
+4. Composer <br>
+5. Download CI di web CI resmi (saya pakek CI 3) </p>
 </justify>
 
 ## Langkah-langkah
@@ -46,7 +47,8 @@ Sub Judul :
     
     http://server_domain_atau_IP
 
-<p> Cara mendapatkan ip yaitu dengan cara command "ifconfig" pada terminal. </p> <br> <br>
+<p> Cara mendapatkan ip yaitu dengan cara command "ifconfig" pada terminal. </p> <br>
+
 
 <p> 2. Karena telah memiliki web server, maka perlu untuk menginstal MySQL (sistem manajemen database) untuk menyimpan dan mengelola data. Instal MySQL dengan mengetik :
 </p>
@@ -57,15 +59,50 @@ Sub Judul :
 
     sudo mysql_secure_installation
 
-<br> <br>
+<br>
 
-<p>3. Setelah instalasi Nginx dan MySQL berhasil, langkah berikutnya adalah menginstal PHP agar dapat menghasilkan konten dinamis.</p>
+<p> 3. Setelah instalasi Nginx dan MySQL berhasil, langkah berikutnya adalah menginstal PHP agar dapat menghasilkan konten dinamis.</p>
 
 <p>Masukkan perintah berikut pada terminal untuk memulai instalasi :</p>
 
     sudo apt install php-fpm php-mysql
 
-<p>Perintah tersebut akan menginstall versi terbaru PHP serta beberapa modul tambahan.</p>
+<br>
 
+<p> 4. Kemudian Instal Composer untuk mempermudah mendeploy CI (list yang dipakek ada di composer.json). Instalnya dengan cara command di terminal seperti di bawah: </p>
+  
+    sudo apt install composer
+    
+<p> 5. Kemudian ke config nginx yang ada di <code> sudo nano /etc/nginx/sites-available/ </code> dan membuat file konfigrasi seperti dibawah ini: </p> 
+
+server {
+            listen 80;
+            root /var/www/CodeIgniter;
+            index index.php index.html index.htm index.nginx-debian.html;
+            server_name localhost;
+
+            location / {
+                    try_files $uri $uri/ =404;
+            }
+
+            location ~ \.php$ {
+                    include snippets/fastcgi-php.conf;
+                    fastcgi_pass unix:/var/run/php/php7.2-fpm.sock;
+            }
+
+            location ~ /\.ht {
+                    deny all;
+            }
+    }
+
+<p> Di dalam file konfigurasi terdapat " root /var/www/CodeIgniter; ", dari sini kita harus memindahkan file CI kita yang sudah di download kedalam folder var/www/.
+
+<p> 6. Memindahkan folder CI ke subfolder var/www agar bisa dijalankan, caranya menggunakan command dibawah ini:
+
+      sudo nautilus
+      
+<p> setelah sudah melakukan <code> sudo nautilus </code> layar akan menuju ke file home, kemudian pindahkan file CI yang sudah di download ke subfolder yang sudah di tulis di file konfigurasi. </p>
+
+<p> 7. Setelah dipindahkan coba cek di Web browser dengan mengetik localhost saja atau dengan alamat ip masing-masing, Jika berhasil akan mendeploy CI.
 </justify>  
   
